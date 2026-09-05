@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,6 +141,11 @@ nav a:hover{
  background:white;
  border-radius:10px;
  outline:none;
+ font-family:'Manrope',sans-serif;
+}
+
+.contact-form textarea{
+ resize:vertical;
 }
 
 .contact-form button{
@@ -156,6 +162,17 @@ nav a:hover{
 
 .contact-form button:hover{
  background:var(--gold);
+}
+
+.contact-form button:disabled{
+ opacity:.6;
+ cursor:not-allowed;
+}
+
+[data-form-status]{
+ margin-top:15px;
+ text-align:center;
+ font-weight:500;
 }
 
 /* NEWSLETTER */
@@ -208,6 +225,15 @@ footer h2{
 
 @media(max-width:768px){
 
+header{
+ padding:20px 5%;
+}
+
+nav a{
+ margin-left:10px;
+ font-size:.7rem;
+}
+
 .contact{
  grid-template-columns:1fr;
 }
@@ -254,7 +280,7 @@ orders, collaborations, or anything else, our team is ready to assist.
 
 <div class="info-box">
 <h3>Email</h3>
-<p>hello@fashionco.com</p>
+<p>mohanm88920@gmail.com</p>
 </div>
 
 <div class="info-box">
@@ -274,14 +300,41 @@ orders, collaborations, or anything else, our team is ready to assist.
 <h2>Send a Message</h2>
 
 <form data-api-form data-endpoint="/api/contact">
-<input type="text" name="name" placeholder="Full Name" required>
-<input type="email" name="email" placeholder="Email Address" required>
-<input type="text" name="subject" placeholder="Subject" required>
 
-<textarea rows="6" name="message" placeholder="Your Message" required></textarea>
+<input
+ type="text"
+ name="name"
+ placeholder="Full Name"
+ required
+>
 
-<button type="submit">Send Message</button>
+<input
+ type="email"
+ name="email"
+ placeholder="Email Address"
+ required
+>
+
+<input
+ type="text"
+ name="subject"
+ placeholder="Subject"
+ required
+>
+
+<textarea
+ rows="6"
+ name="message"
+ placeholder="Your Message"
+ required
+></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
 <p data-form-status role="status"></p>
+
 </form>
 
 </div>
@@ -292,21 +345,41 @@ orders, collaborations, or anything else, our team is ready to assist.
 
 <h2>Join Fashion.co Circle</h2>
 
-<p>Receive exclusive launches, offers and luxury fashion updates.</p>
+<p>
+Receive exclusive launches, offers and luxury fashion updates.
+</p>
 
 <form data-api-form data-endpoint="/api/subscribe">
-<input type="email" name="email" placeholder="Enter your email" required>
-<button type="submit">Subscribe</button>
+
+<input
+ type="email"
+ name="email"
+ placeholder="Enter your email"
+ required
+>
+
+<button type="submit">
+Subscribe
+</button>
+
 <p data-form-status role="status"></p>
+
 </form>
 
 </section>
 
 <footer>
+
 <h2>Fashion.co</h2>
-<p>Luxury Fashion • Timeless Elegance</p>
+
+<p>
+Luxury Fashion • Timeless Elegance
+</p>
+
 </footer>
 
 <script src="public/site.js"></script>
+
 </body>
 </html>
+```

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fashion.co | Create Account</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .bodoni {
+            font-family: 'Bodoni Moda', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#FCF9F9] text-[#201A1C] min-h-screen">
+
+    <!-- NAVBAR -->
+    <header class="bg-[#FCF9F9]/90 backdrop-blur-xl sticky top-0 z-50 border-b border-[#D6C1C6]/30">
+
+        <nav class="flex justify-between items-center px-6 md:px-20 py-5 max-w-[1440px] mx-auto">
+
+            <a href="index.html" class="bodoni text-3xl font-medium">
+                Fashion.co
+            </a>
+
+            <a href="login.html"
+               class="text-xs font-bold tracking-[0.15em] text-[#8B4A63] hover:text-[#D4AF37] transition">
+                SIGN IN
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- REGISTER SECTION -->
+    <main class="min-h-[calc(100vh-85px)] flex items-center justify-center px-6 py-16">
+
+        <div class="w-full max-w-md">
+
+            <!-- HEADING -->
+            <div class="text-center mb-10">
+
+                <p class="text-xs font-bold tracking-[0.3em] text-[#D4AF37] mb-4">
+                    FASHION.CO ATELIER
+                </p>
+
+                <h1 class="bodoni text-5xl md:text-6xl text-[#201A1C] mb-4">
+                    Create Account
+                </h1>
+
+                <p class="text-[#5F5E5E]">
+                    Join the Fashion.co community and explore our collections.
+                </p>
+
+            </div>
+
+
+            <!-- REGISTER CARD -->
+            <div class="bg-white/70 backdrop-blur-xl border border-[#D6C1C6]/40 p-8 md:p-10 shadow-xl shadow-[#8B4A63]/5">
+
+                <form id="registerForm">
+
+                    <!-- NAME -->
+                    <div class="mb-6">
+
+                        <label
+                            for="name"
+                            class="block text-xs font-bold tracking-[0.15em] text-[#514347] mb-3">
+                            FULL NAME
+                        </label>
+
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            required
+                            placeholder="Your name"
+                            class="w-full bg-transparent border-0 border-b border-[#847377] focus:border-[#D4AF37] focus:ring-0 px-0 py-4 text-[#201A1C] transition"
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="mb-6">
+
+                        <label
+                            for="email"
+                            class="block text-xs font-bold tracking-[0.15em] text-[#514347] mb-3">
+                            EMAIL ADDRESS
+                        </label>
+
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            required
+                            placeholder="your@email.com"
+                            class="w-full bg-transparent border-0 border-b border-[#847377] focus:border-[#D4AF37] focus:ring-0 px-0 py-4 text-[#201A1C] transition"
+                        >
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+                    <div class="mb-6">
+
+                        <label
+                            for="password"
+                            class="block text-xs font-bold tracking-[0.15em] text-[#514347] mb-3">
+                            PASSWORD
+                        </label>
+
+                        <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            required
+                            minlength="6"
+                            placeholder="Minimum 6 characters"
+                            class="w-full bg-transparent border-0 border-b border-[#847377] focus:border-[#D4AF37] focus:ring-0 px-0 py-4 text-[#201A1C] transition"
+                        >
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+                    <div class="mb-8">
+
+                        <label
+                            for="confirmPassword"
+                            class="block text-xs font-bold tracking-[0.15em] text-[#514347] mb-3">
+                            CONFIRM PASSWORD
+                        </label>
+
+                        <input
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            type="password"
+                            required
+                            minlength="6"
+                            placeholder="Re-enter your password"
+                            class="w-full bg-transparent border-0 border-b border-[#847377] focus:border-[#D4AF37] focus:ring-0 px-0 py-4 text-[#201A1C] transition"
+                        >
+
+                    </div>
+
+
+                    <!-- REGISTER BUTTON -->
+                    <button
+                        type="submit"
+                        id="registerButton"
+                        class="w-full bg-[#1A1A1A] text-white py-4 text-xs font-bold tracking-[0.15em] hover:bg-[#D4AF37] transition duration-300">
+
+                        CREATE ACCOUNT
+
+                    </button>
+
+
+                    <!-- STATUS -->
+                    <p
+                        id="registerStatus"
+                        class="text-center text-sm mt-5 min-h-[24px]">
+                    </p>
+
+                </form>
+
+            </div>
+
+
+            <!-- LOGIN LINK -->
+            <div class="text-center mt-8">
+
+                <p class="text-sm text-[#5F5E5E]">
+
+                    Already have an account?
+
+                    <a href="login.html"
+                       class="text-[#8B4A63] font-bold hover:text-[#D4AF37] transition">
+
+                        Sign in
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- REGISTER JAVASCRIPT -->
+    <script>
+
+        const registerForm = document.getElementById("registerForm");
+
+        const registerStatus = document.getElementById("registerStatus");
+
+        const registerButton = document.getElementById("registerButton");
+
+
+        registerForm.addEventListener("submit", async function(event) {
+
+            event.preventDefault();
+
+
+            const name = document.getElementById("name").value.trim();
+
+            const email = document.getElementById("email").value.trim();
+
+            const password = document.getElementById("password").value;
+
+            const confirmPassword =
+                document.getElementById("confirmPassword").value;
+
+
+            // CHECK PASSWORDS
+            if (password !== confirmPassword) {
+
+                registerStatus.textContent = "Passwords do not match.";
+
+                registerStatus.className =
+                    "text-center text-sm mt-5 min-h-[24px] text-[#BA1A1A]";
+
+                return;
+            }
+
+
+            registerStatus.textContent = "Creating your account...";
+
+            registerStatus.className =
+                "text-center text-sm mt-5 min-h-[24px] text-[#5F5E5E]";
+
+            registerButton.disabled = true;
+
+
+            try {
+
+                const response = await fetch("/api/register", {
+
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        password: password
+                    })
+
+                });
+
+
+                const result = await response.json();
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        result.message || "Registration failed."
+                    );
+
+                }
+
+
+                registerStatus.textContent =
+                    "Account created successfully!";
+
+                registerStatus.className =
+                    "text-center text-sm mt-5 min-h-[24px] text-[#3B6939]";
+
+
+                setTimeout(function() {
+
+                    window.location.href = "login.html";
+
+                }, 1200);
+
+
+            } catch (error) {
+
+                registerStatus.textContent = error.message;
+
+                registerStatus.className =
+                    "text-center text-sm mt-5 min-h-[24px] text-[#BA1A1A]";
+
+            }
+
+
+            registerButton.disabled = false;
+
+        });
+
+    </script>
+
+</body>
+
+</html>
